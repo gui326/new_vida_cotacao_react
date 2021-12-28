@@ -1,0 +1,12 @@
+.cardIncluso{
+    background: white;
+    border-radius: 5px;
+}
+
+.cardIncluso .areaImagem{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0!important;
+    text-align: center;
+}
