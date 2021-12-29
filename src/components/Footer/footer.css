@@ -11,3 +11,30 @@ footer{
     justify-content: center;
     padding: 15px 0;
 }
+
+footer .footer--button{
+    width: 100%!important;
+    text-align: center;
+}
+
+footer button{
+    background: white!important;
+    color: #5100ff!important;
+    font-weight: 700!important;
+    border-radius: 0 15px 15px 15px!important;
+    width: 60%!important;
+}
+
+footer .buttonWithBack{
+    width: 55%!important;
+    position: relative!important;
+    left: 1.5%!important;
+    bottom: 5px!important;
+}
+
+footer svg{
+    position: relative;
+    top: 8px;
+    right: 1.5%;
+    color: white
+}

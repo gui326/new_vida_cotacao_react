@@ -2,9 +2,11 @@ import { Grid, TextField, Typography } from "@mui/material";
 import React from "react";
 import Card from '../Card';
 import './passo2.css';
+import { Slide } from '@mui/material';
 
 export default function Passo2(){
     return(
+        
         <Card>
             <Typography color="#5100ff" variant="h2" remetent="h1">
                 Vamos te enviar uma cópia da cotação ;D
@@ -34,5 +36,6 @@ export default function Passo2(){
                 </Grid>
             </Grid>
         </Card>
+        
     );
 }

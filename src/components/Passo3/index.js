@@ -1,6 +1,7 @@
 import { Grid, Slider, Typography } from "@mui/material";
 import React from "react";
 import Card from '../Card';
+import CardComplementar from "../CardComplementar";
 import CardIncluso from '../CardIncluso';
 import './passo3.css';
 
@@ -8,6 +9,30 @@ export default function Passo3(){
     const inclusos = [
         {
             imagem: '/assets/img/iconeCarro.svg',
+            texto_principal: 'Morte Acidental',
+            valor: 170000,
+            resumo: 'Seus beneficiários receberão o valor de indenização caso você venha a falecer por causa de algum acidente. Por exemplo: acidente de trânsito, acidente de trabalho ou violência urbana.',
+            texto_interno: [
+                {
+                    titulo: 'O que cobre:',
+                    texto: 'Mortes causadas por acidentes, suicídio ou tentativa de suicídio. Alguns exemplos: Acidentes de trânsito, violência urbana, acidentes de trabalho, riscos ambientais como afogamentos, quedas e muito mais.',
+                },
+                {
+                    titulo: 'O que não cobre:',
+                    texto: 'Não cobre mortes causadas por doenças (Covid, por exemplo) e qualquer outro tipo de morte que não seja decorrente de acidente.',
+                },
+                {
+                    titulo: 'Franquias e multas:',
+                    texto: 'Não há.',
+                },
+                {
+                    titulo: 'Carência:',
+                    texto: '2 anos para suicídio ou tentativa de suicídio.',
+                },
+            ]
+        },
+        {
+            imagem: '/assets/img/iconeFlor.svg',
             texto_principal: 'texto principal',
             valor: 1900,
             resumo: 'teste',
@@ -16,6 +41,33 @@ export default function Passo3(){
                     titulo: 'teste',
                     texto: 'teste',
                 }
+            ]
+        }
+    ];
+
+    const complementares = [
+        {
+            imagem: '/assets/img/iconeCarro.svg',
+            texto_principal: 'Morte Acidental',
+            valor: 170000,
+            resumo: 'Seus beneficiários receberão o valor de indenização caso você venha a falecer por causa de algum acidente. Por exemplo: acidente de trânsito, acidente de trabalho ou violência urbana.',
+            texto_interno: [
+                {
+                    titulo: 'O que cobre:',
+                    texto: 'Mortes causadas por acidentes, suicídio ou tentativa de suicídio. Alguns exemplos: Acidentes de trânsito, violência urbana, acidentes de trabalho, riscos ambientais como afogamentos, quedas e muito mais.',
+                },
+                {
+                    titulo: 'O que não cobre:',
+                    texto: 'Não cobre mortes causadas por doenças (Covid, por exemplo) e qualquer outro tipo de morte que não seja decorrente de acidente.',
+                },
+                {
+                    titulo: 'Franquias e multas:',
+                    texto: 'Não há.',
+                },
+                {
+                    titulo: 'Carência:',
+                    texto: '2 anos para suicídio ou tentativa de suicídio.',
+                },
             ]
         },
         {
@@ -46,8 +98,17 @@ export default function Passo3(){
 
             {inclusos.map((incluso) => 
                 <CardIncluso key={incluso} item={incluso}/>
-            )
-            }
+            )}
+
+            <Typography mb={3} mt={15} color="#5100ff" variant="h4" remetent="h1">
+                Deseja complementar o seu plano?
+            </Typography>
+
+            {complementares.map((complementar) =>
+                <CardComplementar key={complementar} item={complementar}/>
+            )}
+
+            
         </Card>
     );
 }

@@ -17,3 +17,11 @@ header{
 .header--logo img{
     max-width: 100px;
 }
+
+.css-eglki6-MuiLinearProgress-root{
+    height: 2px!important;
+}
+
+.css-5xe99f-MuiLinearProgress-bar1{
+    background-color: #5100ff!important;
+}

@@ -1,10 +1,10 @@
-.cardIncluso{
+.cardComplementar{
     background: white;
     border-radius: 5px;
     margin-bottom: 2%;
 }
 
-.cardIncluso .areaImagem{
+.cardComplementar .areaImagem{
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -12,14 +12,14 @@
     text-align: center;
 }
 
-.cardIncluso h4{
+.cardComplementar h4{
     margin-top: 2%;
     margin-bottom: 3%;
     font-weight: 700;
     color: #898989;
 }
 
-.cardIncluso p{
+.cardComplementar p{
     margin-top: 0;
     font-weight: 500;
     line-height: 23px;
@@ -27,8 +27,15 @@
     font-size: 0.8rem;
 }
 
-.cardIncluso .card--valor{
+.cardComplementar .card--valor{
     font-size: 1.2rem;
     color: #5100ff;
+    background: #CAB085;
+    padding: 1px 3%;
+    border-radius: 9999px;
+}
 
+.cardComplementar .card--switch{
+    margin: auto;
+    text-align: center;
 }
