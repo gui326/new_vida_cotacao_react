@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <Header step={step * 10}/>
-      <Box sx={{ p: '10% 20%' }}>
+      <Box sx={{ p: {md: '10% 20%', xs: 0}  }}>
           <form onSubmit={handleSubmit(onSubmit)}>
             {step == 1 &&
               <Passo1 teste1={{...register("nascimento")}} teste2={{...register("profissao")}}/>

@@ -13,3 +13,9 @@ a{
 p, span, button, div, h1, h2, h3, h4, h5, h6, input, select, a{
   font-family: 'inter';
 }
+
+@media (max-width: 414px){
+  body{
+    background: #f8f5ef;
+  }
+}

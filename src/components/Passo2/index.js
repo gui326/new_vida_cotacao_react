@@ -8,7 +8,7 @@ export default function Passo2(){
     return(
         
         <Card>
-            <Typography color="#5100ff" variant="h2" remetent="h1">
+            <Typography mt={4} className="titlePatternOne" variant="h2" remetent="h1">
                 Vamos te enviar uma cópia da cotação ;D
             </Typography>
             <Typography mt={4} color="#696969" variant="subtitle1">

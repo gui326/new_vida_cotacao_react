@@ -4,3 +4,9 @@
     padding: 8%;
     transition: all ease 0.5s;
 }
+
+@media (max-width: 414px){
+    .Card{
+        padding: 25% 5%;
+    }
+}

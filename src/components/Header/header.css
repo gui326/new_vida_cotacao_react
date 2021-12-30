@@ -25,3 +25,9 @@ header{
 .css-5xe99f-MuiLinearProgress-bar1{
     background-color: #5100ff!important;
 }
+
+@media (max-width: 414px){
+    .header--logo{
+        padding: 15px 5%;
+    }
+}

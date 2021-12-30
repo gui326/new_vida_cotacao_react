@@ -12,11 +12,11 @@ export default function Passo1(props){
 
     return(
         <Card>
-            <Typography color="#5100ff" variant="h3" remetent="h1">
+            <Typography mt={4} className="titlePatternOne" color="#5100ff" variant="h3" remetent="h1">
                 Vamo escolher o melhor seguro para você ;)
             </Typography>
 
-            <TextField {...props.teste1} sx={{ mt: 5 }} InputLabelProps={{ shrink: true }} type="date" fullWidth label="Quando você nasceu?" name="nascimento" variant="filled"/>
+            <TextField {...props.teste1} sx={{ mt: 3 }} InputLabelProps={{ shrink: true }} type="date" fullWidth label="Quando você nasceu?" name="nascimento" variant="filled"/>
 
             <Autocomplete
             {...props.teste2}
