@@ -15,24 +15,14 @@ export default function Passo2(){
                 Não precisar se preocupar, não vamos divulgar nenhum dado, ok? :3
             </Typography>
 
+            <TextField sx={{ mt: 4 }} fullWidth label="Qual seu nome?" name="nome" variant="filled"/>
 
-            <Typography mt={6} mb={1} color="#696969" variant="h6" remetent="h6">
-                Qual seu nome?
-            </Typography>
-            <TextField fullWidth type="text" name="nome" variant="standard"/>
-
-            <Grid container spacing={2}>
+            <Grid mt={4} container spacing={2}>
                 <Grid item xs={6}>
-                    <Typography mt={6} mb={1} color="#696969" variant="h6" remetent="h6">
-                        WhatsApp(DD)
-                    </Typography>
-                    <TextField fullWidth type="text" name="celular" variant="standard"/>
+                    <TextField fullWidth type="text" label="WhatsApp(DD)" name="celular" variant="filled"/>
                 </Grid>
                 <Grid item xs={6}>
-                    <Typography mt={6} mb={1} color="#696969" variant="h6" remetent="h6">
-                        E-mail
-                    </Typography>
-                    <TextField fullWidth type="email" name="email" variant="standard"/>
+                    <TextField fullWidth type="email" label="E-mail" name="email" variant="filled"/>
                 </Grid>
             </Grid>
         </Card>

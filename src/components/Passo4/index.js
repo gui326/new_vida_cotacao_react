@@ -1,6 +1,7 @@
 import { TextField, Typography, Grid } from "@mui/material";
 import React from "react";
 import Card from "../Card";
+import './passo4.css';
 
 export default function Passo4(){
     return(
@@ -11,16 +12,10 @@ export default function Passo4(){
 
             <Grid mt={4} container spacing={4}>
                 <Grid item xs={6}>
-                    <Typography color={'#898989'} variant="h6">
-                        Qual a sua altura?(m)
-                    </Typography>
-                    <TextField fullWidth variant="standard"/>
+                    <TextField fullWidth label="Qual a sua altura?(m)" variant="filled"/>
                 </Grid>
                 <Grid item xs={6}>
-                    <Typography color={'#898989'} variant="h6">
-                        Qual o seu peso?(kg)
-                    </Typography>
-                    <TextField fullWidth variant="standard"/>
+                    <TextField fullWidth label="Qual o seu peso?(kg)" variant="filled"/>
                 </Grid>
             </Grid>
             

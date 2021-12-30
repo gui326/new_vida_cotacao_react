@@ -10,26 +10,19 @@ export default function Passo5(){
             </Typography>
             <Grid mt={4} container spacing={4}>
                 <Grid item xs={6}>
-                    <Typography color="#898989" variant="h6">
-                        CPF
-                    </Typography>
-                    <TextField fullWidth variant="standard"/>
+                    <TextField fullWidth label="CPF" variant="filled"/>
                 </Grid>
                 <Grid item xs={6}>
-                    <Typography color="#898989" variant="h6">
-                        RG
-                    </Typography>
-                    <TextField fullWidth variant="standard"/>
+                    <TextField fullWidth label="RG" variant="filled"/>
                 </Grid>
             </Grid>
             <Grid mt={4} container spacing={4}>
                 <Grid item xs={6}>
-                    <Typography color="#898989" variant="h6">
-                        Estado Civil
-                    </Typography>
+                        <Typography color="#898989" variant="h6">
+                            Estado Civil
+                        </Typography>
                     <Select fullWidth   
-                        variant="standard"
-                        labelId="demo-simple-select-standard-label"
+                        variant="filled"
                         id="demo-simple-select-standard"
                         label="Estado Civil"
                     >
@@ -38,10 +31,7 @@ export default function Passo5(){
                     </Select>
                 </Grid>
                 <Grid item xs={6}>
-                    <Typography color="#898989" variant="h6">
-                        Renda Mensal
-                    </Typography>
-                    <TextField fullWidth variant="standard"/>
+                    <TextField fullWidth label="Renda Mensal" variant="filled"/>
                 </Grid>
             </Grid>
         </Card>

@@ -11,6 +11,7 @@ import Passo6 from './components/Passo6';
 import Passo7 from './components/Passo7';
 import Passo8 from './components/Passo8';
 import { Box } from '@mui/system';
+import { useForm } from "react-hook-form";
 
 
 function App() {
@@ -26,15 +27,20 @@ function App() {
     }
   };
 
+  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const onSubmit = data => console.log(data);
+
+  console.log(watch());
+
   console.log('passo: ' + step);
 
   return (
     <div className="App">
       <Header step={step * 10}/>
       <Box sx={{ p: '10% 20%' }}>
-          
+          <form onSubmit={handleSubmit(onSubmit)}>
             {step == 1 &&
-              <Passo1/>
+              <Passo1 teste1={{...register("nascimento")}} teste2={{...register("profissao")}}/>
             }
             {step == 2 &&
               <Passo2/>
@@ -57,7 +63,7 @@ function App() {
             {step == 8 &&
               <Passo8/>
             }
-          
+          </form>
       </Box>
       <Footer nextStep={nextStep} backStep={backStep} step={step}/>
     </div>

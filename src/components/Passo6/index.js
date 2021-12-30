@@ -12,31 +12,31 @@ export default function Passo6(){
                 Vamos começar pelo seu CEP
             </Typography>
 
-            <TextField variant="standard"/>
+            <TextField label="CEP" variant="filled"/>
 
             <Grid mt={4} container spacing={2}>
                 <Grid item xs={6}>
-                    <TextField fullWidth label="Rua" variant="standard"/>
+                    <TextField fullWidth label="Rua" variant="filled"/>
                 </Grid>
                 <Grid item xs={3}>
-                    <TextField fullWidth label="Número" variant="standard"/>
+                    <TextField fullWidth label="Número" variant="filled"/>
                 </Grid>
                 <Grid item xs={3}>
-                    <TextField fullWidth label="Complemento" variant="standard"/>
+                    <TextField fullWidth label="Complemento" variant="filled"/>
                 </Grid>
             </Grid>
 
             <Grid mt={4} container spacing={2}>
                 <Grid item xs={4}>
-                    <TextField fullWidth label="Bairro" variant="standard"/>
+                    <TextField fullWidth label="Bairro" variant="filled"/>
                 </Grid>
                 <Grid item xs={4}>
-                    <TextField fullWidth label="Cidade" variant="standard"/>
+                    <TextField fullWidth label="Cidade" variant="filled"/>
                 </Grid>
                 <Grid item xs={4}>
-                    <FormControl fullWidth variant="standard">
+                    <FormControl fullWidth variant="filled">
                         <InputLabel>Estado</InputLabel>
-                        <Select fullWidth label="Estado" variant="standard">
+                        <Select fullWidth label="Estado" variant="filled">
                             <MenuItem value={'SP'}>São Paulo</MenuItem>
                             <MenuItem value={'MG'}>Minas Gerais</MenuItem>
                         </Select>
