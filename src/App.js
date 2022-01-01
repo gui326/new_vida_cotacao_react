@@ -12,6 +12,7 @@ import Passo7 from './components/Passo7';
 import Passo8 from './components/Passo8';
 import { Box } from '@mui/system';
 import { useForm } from "react-hook-form";
+import Slide from '@mui/material/Slide';
 
 
 function App() {
@@ -37,34 +38,64 @@ function App() {
   return (
     <div className="App">
       <Header step={step * 10}/>
-      <Box sx={{ p: {md: '10% 20%', xs: 0}  }}>
-          <form onSubmit={handleSubmit(onSubmit)}>
-            {step == 1 &&
-              <Passo1 teste1={{...register("nascimento")}} teste2={{...register("profissao")}}/>
-            }
-            {step == 2 &&
-              <Passo2/>
-            }
-            {step == 3 &&
-              <Passo3/>
-            }
-            {step == 4 &&
-              <Passo4/>
-            }
-            {step == 5 &&
-              <Passo5/>
-            }
-            {step == 6 &&
-              <Passo6/>
-            }
-            {step == 7 &&
-              <Passo7/>
-            }
-            {step == 8 &&
-              <Passo8/>
-            }
-          </form>
-      </Box>
+      
+            <form onSubmit={handleSubmit(onSubmit)}>
+              {step == 1 &&
+                <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 4 }}>
+                    <Passo1 teste1={{...register("nascimento")}} teste2={{...register("profissao")}}/>
+                </Box>
+              }
+              {step == 2 &&
+                <Slide direction="right" timeout={500} in={true}>
+                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 4 }}>
+                    <Passo2/>
+                  </Box>
+                </Slide>
+              }
+              {step == 3 &&
+                <Slide direction="right" timeout={500} in={true}>
+                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 4 }}>
+                    <Passo3/>
+                  </Box>
+                </Slide>
+              }
+              {step == 4 &&
+                <Slide direction="right" timeout={500} in={true}>
+                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 4 }}>
+                    <Passo4/>
+                  </Box>
+                </Slide>
+              }
+              {step == 5 &&
+                <Slide direction="right" timeout={500} in={true}>
+                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 4 }}>
+                    <Passo5/>
+                  </Box>
+                </Slide>
+              }
+              {step == 6 &&
+                <Slide direction="right" timeout={500} in={true}>
+                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 4 }}>
+                    <Passo6/>
+                  </Box>
+                </Slide>
+              }
+              {step == 7 &&
+                <Slide direction="right" timeout={500} in={true}>
+                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 4 }}>
+                    <Passo7/>
+                  </Box>
+                </Slide>    
+              }
+              {step == 8 &&
+                <Slide direction="right" timeout={500} in={true}>
+                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 4 }}>
+                    <Passo8/>
+                  </Box>
+                </Slide>
+              }
+            </form>
+        
       <Footer nextStep={nextStep} backStep={backStep} step={step}/>
     </div>
   );

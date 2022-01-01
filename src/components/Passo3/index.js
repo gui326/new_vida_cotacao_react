@@ -86,7 +86,7 @@ export default function Passo3(){
 
     return(
         <Card>
-            <Typography color="#5100ff" variant="h2" remetent="h1">
+            <Typography className="titlePatternOne" variant="h2" remetent="h1">
                 Qual o valor de cotação que você deseja?
             </Typography>
 

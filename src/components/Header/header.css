@@ -18,11 +18,11 @@ header{
     max-width: 100px;
 }
 
-.css-eglki6-MuiLinearProgress-root{
-    height: 2px!important;
+.MuiLinearProgress-root{
+    height: 6px!important;
 }
 
-.css-5xe99f-MuiLinearProgress-bar1{
+.MuiLinearProgress-bar{
     background-color: #5100ff!important;
 }
 

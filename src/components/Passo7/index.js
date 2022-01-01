@@ -5,7 +5,7 @@ import Card from "../Card";
 export default function Passo7(){
     return(
         <Card>
-            <Typography color="#5100ff" variant="h3">
+            <Typography className="titlePatternOne" variant="h3">
                 Escolha para quem vai ser o beneficiário
             </Typography>
 

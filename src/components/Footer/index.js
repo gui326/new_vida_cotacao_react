@@ -1,17 +1,34 @@
 import React from "react";
 import "./footer.css";
-import { Button } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 
 export default function Footer(props){
     return(
         <footer>
             <div className="footer--button">
-                {props.step > 1 &&
-                    <svg role="role" onClick={props.backStep} width="40" height="40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
-                    </svg>
+                {props.step == 1 &&
+                    <Grid container>
+                        <Grid item xs={1}>
+
+                        </Grid>
+                        <Grid item xs={10}>
+                            <Button variant="contained" onClick={props.nextStep}>Continuar</Button>
+                        </Grid>
+                    </Grid>
                 }
-                <Button className={props.step > 1 && 'buttonWithBack'} variant="contained" onClick={props.nextStep}>Continuar</Button>
+                {props.step > 1 &&
+                    <Grid container>
+                        <Grid item className="Mui--itemBack" xs={2}>
+                            <svg role="role" onClick={props.backStep} xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                            </svg>
+                        </Grid>
+                        <Grid item xs={9}>
+                            <Button variant="contained" onClick={props.nextStep}>Continuar</Button>
+                        </Grid>
+                    </Grid>
+                } 
+                
             </div>
         </footer>
     );

@@ -1,22 +1,24 @@
-.css-u1qkm1-MuiTypography-root{
-    line-height: 4.5rem!important;
-}
 
-.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root{
-    color: rgba(0,0,0,.5)!important;
-    font-size: 1.5rem!important;
-}
-
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
+.MuiFilledInput-root{
     background: white!important;
 }
 
-.css-1w8yruj-MuiInputBase-root-MuiFilledInput-root{
-    background: white!important;
-}
-
-.css-ahj2mt-MuiTypography-root{
+.MuiFilledInput-input{
     font-family: 'Inter'!important;
+    color: rgba(0,0,0,.5)!important;
+    font-size: 1.2rem!important;
+}
+
+.MuiFormControlLabel-root{
+    color: rgba(0,0,0,.5)!important;
+}
+
+.MuiFilledInput-root:after{
+    border-color: #5100ff!important;
+}
+
+.Mui-focused{
+    color: #5100ff!important;
 }
 
 .titlePatternOne{
@@ -25,4 +27,9 @@
     margin-bottom: 1rem!important;
     font-size: 2rem!important;
     color: #5100ff;
+}
+
+.MuiTypography-subtitle1{
+    color: rgba(0,0,0,.5)!important;
+    font-size: 1.1rem!important;
 }

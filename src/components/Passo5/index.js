@@ -5,22 +5,19 @@ import Card from "../Card";
 export default function Passo5(){
     return(
         <Card>
-            <Typography color="#5100ff" variant="h3">
+            <Typography className="titlePatternOne" variant="h3">
                 Agora fala para gente mais sobre você
             </Typography>
             <Grid mt={4} container spacing={4}>
-                <Grid item xs={6}>
+                <Grid item md={6} xs={12}>
                     <TextField fullWidth label="CPF" variant="filled"/>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item md={6} xs={12}>
                     <TextField fullWidth label="RG" variant="filled"/>
                 </Grid>
             </Grid>
-            <Grid mt={4} container spacing={4}>
-                <Grid item xs={6}>
-                        <Typography color="#898989" variant="h6">
-                            Estado Civil
-                        </Typography>
+            <Grid mt={0} container spacing={4}>
+                <Grid item md={6} xs={12}>
                     <Select fullWidth   
                         variant="filled"
                         id="demo-simple-select-standard"
@@ -30,7 +27,7 @@ export default function Passo5(){
                         <MenuItem value={20}>Casado</MenuItem>
                     </Select>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item md={6} xs={12}>
                     <TextField fullWidth label="Renda Mensal" variant="filled"/>
                 </Grid>
             </Grid>
