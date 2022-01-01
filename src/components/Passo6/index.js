@@ -8,16 +8,16 @@ export default function Passo6(){
                 Ah... Falta seu endereço
             </Typography>
 
-            <TextField fullWidth sx={{ mt: 4 }} label="CEP" variant="filled"/>
+            <TextField fullWidth sx={{ mt: 1 }} label="CEP" variant="filled"/>
 
             <Grid mt={0} container spacing={2}>
                 <Grid item md={6} xs={12}>
                     <TextField fullWidth label="Rua" variant="filled"/>
                 </Grid>
-                <Grid item md={3} xs={12}>
+                <Grid item md={3} xs={4}>
                     <TextField fullWidth label="Número" variant="filled"/>
                 </Grid>
-                <Grid item md={3} xs={12}>
+                <Grid item md={3} xs={8}>
                     <TextField fullWidth label="Complemento" variant="filled"/>
                 </Grid>
             </Grid>

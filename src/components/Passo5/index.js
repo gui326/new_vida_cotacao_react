@@ -8,15 +8,16 @@ export default function Passo5(){
             <Typography className="titlePatternOne" variant="h3">
                 Agora fala para gente mais sobre você
             </Typography>
-            <Grid mt={4} container spacing={4}>
+
+            <Grid mt={1} container spacing={2}>
                 <Grid item md={6} xs={12}>
                     <TextField fullWidth label="CPF" variant="filled"/>
                 </Grid>
-                <Grid item md={6} xs={12}>
+                <Grid item mt={1} md={6} xs={12}>
                     <TextField fullWidth label="RG" variant="filled"/>
                 </Grid>
             </Grid>
-            <Grid mt={0} container spacing={4}>
+            <Grid mt={1} container spacing={2}>
                 <Grid item md={6} xs={12}>
                     <Select fullWidth   
                         variant="filled"
@@ -27,7 +28,7 @@ export default function Passo5(){
                         <MenuItem value={20}>Casado</MenuItem>
                     </Select>
                 </Grid>
-                <Grid item md={6} xs={12}>
+                <Grid item mt={1} md={6} xs={12}>
                     <TextField fullWidth label="Renda Mensal" variant="filled"/>
                 </Grid>
             </Grid>

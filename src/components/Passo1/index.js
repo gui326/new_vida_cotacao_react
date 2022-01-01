@@ -16,7 +16,7 @@ export default function Passo1(props){
                 Olá, vamos juntos encontrar o melhor seguro de vida para vc? =D
             </Typography>
 
-            <TextField {...props.teste1} sx={{ mt: 3 }} fullWidth label="Quando você nasceu?" name="nascimento" variant="filled"/>
+            <TextField {...props.teste1} sx={{ mt: 1 }} fullWidth label="Quando você nasceu?" name="nascimento" variant="filled"/>
 
             <Autocomplete
             {...props.teste2}

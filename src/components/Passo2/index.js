@@ -11,7 +11,7 @@ export default function Passo2(){
             <Typography className="titlePatternOne" variant="h2" remetent="h1">
                 Vamos te enviar uma cópia da cotação ;D
             </Typography>
-            <Typography mt={4} color="#696969" variant="subtitle1">
+            <Typography mt={1} color="#696969" variant="subtitle1">
                 Não precisar se preocupar, não vamos divulgar nenhum dado, ok? :3
             </Typography>
 

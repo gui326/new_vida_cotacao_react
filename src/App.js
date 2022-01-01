@@ -41,55 +41,55 @@ function App() {
       
             <form onSubmit={handleSubmit(onSubmit)}>
               {step == 1 &&
-                <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 2 }}>
+                <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 1 }}>
                     <Passo1 teste1={{...register("nascimento")}} teste2={{...register("profissao")}}/>
                 </Box>
               }
               {step == 2 &&
                 <Slide direction="right" timeout={500} in={true}>
-                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 2 }}>
+                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 1 }}>
                     <Passo2/>
                   </Box>
                 </Slide>
               }
               {step == 3 &&
                 <Slide direction="right" timeout={500} in={true}>
-                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 2 }}>
+                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 1 }}>
                     <Passo3/>
                   </Box>
                 </Slide>
               }
               {step == 4 &&
                 <Slide direction="right" timeout={500} in={true}>
-                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 2 }}>
+                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 1 }}>
                     <Passo4/>
                   </Box>
                 </Slide>
               }
               {step == 5 &&
                 <Slide direction="right" timeout={500} in={true}>
-                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 2 }}>
+                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 1 }}>
                     <Passo5/>
                   </Box>
                 </Slide>
               }
               {step == 6 &&
                 <Slide direction="right" timeout={500} in={true}>
-                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 2 }}>
+                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 1 }}>
                     <Passo6/>
                   </Box>
                 </Slide>
               }
               {step == 7 &&
                 <Slide direction="right" timeout={500} in={true}>
-                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 2 }}>
+                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 1 }}>
                     <Passo7/>
                   </Box>
                 </Slide>    
               }
               {step == 8 &&
                 <Slide direction="right" timeout={500} in={true}>
-                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 2 }}>
+                  <Box sx={{ p: {md: '10% 20%', xs: 0},  mt: 1 }}>
                     <Passo8/>
                   </Box>
                 </Slide>
