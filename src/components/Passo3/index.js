@@ -3,9 +3,23 @@ import React from "react";
 import Card from '../Card';
 import CardComplementar from "../CardComplementar";
 import CardIncluso from '../CardIncluso';
+import Dialogo from "../Dialogo";
 import './passo3.css';
 
+
 export default function Passo3(){
+    const [open, setOpen] = React.useState(false);
+    const [title, setTitle] = React.useState("Teste");
+
+    const handleClickOpen = (e) => {
+        setOpen(true);
+        setTitle(e.title);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
     const inclusos = [
         {
             imagem: '/assets/img/iconeCarro.svg',
@@ -92,23 +106,24 @@ export default function Passo3(){
 
             <Slider sx={{ mt: '7%' }} defaultValue={170000} aria-label="Default" step={10000} min={40000} max={300000} valueLabelDisplay="auto"/>
             
-            <Typography mb={3} mt={15} color="#5100ff" variant="h4" remetent="h1">
+            <Typography sx={{ mb: '10%!important' }} mt={12} className="titlePatternOne" variant="h4" remetent="h1">
                 O que está incluso no seu plano
             </Typography>
 
-            {inclusos.map((incluso) => 
-                <CardIncluso key={incluso} item={incluso}/>
+            {inclusos.map((incluso, key) => 
+                <CardIncluso key={key} item={incluso} handleClickOpen={handleClickOpen}/>
             )}
 
-            <Typography mb={3} mt={15} color="#5100ff" variant="h4" remetent="h1">
+            <Typography mb={3} mt={15} className="titlePatternOne" variant="h4" remetent="h1">
                 Deseja complementar o seu plano?
             </Typography>
 
-            {complementares.map((complementar) =>
-                <CardComplementar key={complementar} item={complementar}/>
+            {complementares.map((complementar, key) =>
+                <CardComplementar key={key} item={complementar}/>
             )}
 
-            
+            <Dialogo open={open} title={title} handleClose={handleClose}/>
+
         </Card>
     );
 }

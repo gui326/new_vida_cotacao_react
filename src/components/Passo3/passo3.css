@@ -1,0 +1,9 @@
+.MuiSlider-thumb{
+    width: 30px!important;
+    height: 30px!important;
+}
+
+.MuiSlider-root{
+    color: #5100ff!important;
+    height: 10px!important;
+}
