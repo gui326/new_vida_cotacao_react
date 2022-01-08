@@ -7,7 +7,7 @@ export default function Header(props){
         <header>
             <div className="header--logo">
                 <a href="/">
-                    <img src="/assets/img/logo.png" alt="Logo da Líbero Seguros"/>
+                    <p style={{color: 'white'}}>Vida Cotação</p>
                 </a>
             </div>  
             <LinearProgress variant="determinate" value={props.step} />
